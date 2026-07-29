@@ -1,0 +1,101 @@
+<html>
+    <title>Localstoragetest</title>
+    <head>
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- bootstraps -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body class="main_background">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kahoot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Presented by Felix</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main body -->
+        <div class="container">
+            <div class="row">
+                <!-- bagian kiri -->
+                <div class="col">
+                    <div class="container borderline">
+                        <div class="row">
+                            <!-- header -->
+                            <div class="col" style="background-color: greenyellow;"><h2 style="color:black; text-align: left;">Leave a message</h2></div>
+                            <ul>
+                                <form id="javaform">
+                                    <!-- alert-name -->
+                                    <li><div id="alertname"></div></li>
+                                    <!-- name -->
+                                    <li class="list_css">
+                                        <p style="text-align: left;">Name</p>
+                                    </li>
+                                    <!-- textbox_name -->
+                                    <li class="list_css">
+                                        <div class="col"><input type="text" placeholder="Name" required style="width:100%" id="newname"></div>
+                                    </li>
+                                    <!-- score -->
+                                    <li class="list_css">
+                                        <p style="text-align: left;">Score</p>
+                                    </li>
+                                    <!-- alert-score -->
+                                    <li><div id="alertint"></div></li>
+                                    <!-- textbox-score -->
+                                    <li class="list_css">
+                                        <div class="col"><textarea placeholder="Your score" required style="width:100%" id="newscore"></textarea></div>
+                                    </li>
+                                    <!-- submit -->
+                                    <li class="list_css">
+                                        <button type="submit" style="width:100%; background-color: greenyellow;">Submit</button>
+                                    </li>
+                                    <!-- reset -->
+                                    <li class="list_css">
+                                        <button type="button" id="resetbutton" style="width:100%; background-color: greenyellow;">Reset</button>
+                                    </li>
+                                </form>  
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- bagian kanan -->
+                <div class="col">
+                    <div class="container borderline">
+                        <div class="row borderline" style="background-color: greenyellow;">
+                            <h3 style="color: black">Total scores: <div id="textscore"></div></h3>
+                        </div>
+                        <!-- scores -->
+                        <div class="row pt-1" style="color:white">
+                            <div id="scores"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="card-footer text-center fixed-bottom" style="background-color: greenyellow;">
+            <p class="mb-0" style="padding: 20px; font-size: larger; color: black;">Company copyright protects original business assets like software, manuals, and website content. It does not protect company names or logos, which require trademark registration instead. Protection begins automatically when you create and record the work.</p>
+        </div>
+        <!-- javascript -->
+        <script src="java.js"></script>
+    </body>
+</html>
