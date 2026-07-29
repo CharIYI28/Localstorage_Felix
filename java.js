@@ -83,6 +83,7 @@ function enternewscore(event){
     }
 }
 
+// reset
 const reseter = document.getElementById("resetbutton")
 reseter.addEventListener('click', reset)
 function reset(event){
@@ -95,6 +96,7 @@ function reset(event){
     addscore();
 }
 
+// total score
 function addscore(){
     const showscore = document.getElementById("textscore")
     let totalscore = 0
